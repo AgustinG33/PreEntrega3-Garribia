@@ -31,6 +31,10 @@
                 font-weight: 500;
                 
               }
+              .btn {
+                @include btn;
+                
+                }
               textarea {
                 background-color: $background_navbar;
                 display: block;
@@ -48,7 +52,9 @@
               a {
                 font-size: 1.3rem;
               }
+              
+        }
           }
       }
-  }
+  
   

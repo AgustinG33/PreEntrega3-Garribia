@@ -56,21 +56,20 @@ $prueba: rgb(236, 2, 2);
 
 @mixin btn {
     @include agrandar;
-
-                    color: $text;
-                    padding: 0.8rem;
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    border-radius: 4px;
-                    font-weight: 400;
-                    display: block;
-                    width: 100px;
-                    cursor: pointer;
-                    border: 1px solid rgba(255, 255, 255, 0.2);
-                    background: $background_navbar;
-                    &:hover {
-                        background-color: $color_tittle;
-                      }
+    color: $text;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: $background_navbar;
+    &:hover {
+        background-color: $color_tittle;
+    }
                     }
 @mixin img_animation{
     max-width: 100%;
