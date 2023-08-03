@@ -1,0 +1,17 @@
+.contenedor{
+    background-color: $background;
+    .tittle_menu{
+        @include disenio_h2;
+        animation: fadeInDown;
+        animation-duration: 2s;
+    }
+    img{
+       @include img_animation
+    }
+    p{
+        @include p;
+    }
+    .btn-primary{
+        @include btn
+    }
+}

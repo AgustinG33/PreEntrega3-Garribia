@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+$color_tittle: rgb(185, 106, 201);
+$disenio_h1:  'Roboto', sans-serif;
+$disenio_p: 'Rowdies', cursive,;
+$nav: rgb(255, 200, 221);
+$shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+$background_navbar: rgb(255,175,204);
+$background: rgb(255,200,221);
+$text: rgb(35,27,27);
+$prueba: rgb(236, 2, 2);
+
+@mixin disenio_h1 {
+            font-family: 'Caprasimo', cursive;
+            font-size: 4rem;
+            font-weight: 400;
+            text-align: center;
+            color: rgb(185, 106, 201);
+            animation: fadeInDown;
+            animation-duration: 2s;
+}
+@mixin disenio_h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(185, 106, 201);
+}
+
+@mixin disenio_p_cards {
+    font-family: 'Rowdies', cursive,;
+    font-size: .8rem;
+    color: $text;
+
+}
+
+@mixin shadow {
+    box-shadow:  0.5rem 1.5rem rgba(0,0,0,.1);
+}
+
+@mixin agrandar {
+    &:hover{
+        transform: translatey( 0px) translatex(0px) scale(1.09);
+    
+    }
+}
+
+@mixin p{
+    font-family: 'Rowdies', cursive,;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+     margin-bottom: 35px;
+}
+
+@mixin btn {
+    @include agrandar;
+
+                    color: $text;
+                    padding: 0.8rem;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    border-radius: 4px;
+                    font-weight: 400;
+                    display: block;
+                    width: 100px;
+                    cursor: pointer;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    background: $background_navbar;
+                    &:hover {
+                        background-color: $color_tittle;
+                      }
+                    }
+@mixin img_animation{
+    max-width: 100%;
+                height: auto;
+                display: block;
+                animation: bounceInRight; 
+                animation-duration: 2s;
+                transition: 0.5s ease;
+                &:hover{
+                    transform: scale(1.1);
+                }
+}

@@ -1,0 +1,54 @@
+#contact {
+    padding: 5rem 0;
+    .contact-container {
+        display: flex;
+        background: $background;
+        .contact-img {
+            width: 50%;
+            img {
+                display: block;
+                height: 400px;
+                width: 100%;
+                object-position: center;
+                object-fit: cover;
+              }
+          }
+          .form-container {
+            padding: 1rem;
+            width: 50%;
+            margin: auto;
+            input {
+                background-color: $background_navbar;
+                display: block;
+                width: 100%;
+                border: none;
+                border-bottom: 2px solid $background_navbar;
+                padding: 1rem 0;
+                box-shadow: none;
+                outline: none;
+                margin-bottom: 1rem;
+                color: $color_tittle;
+                font-weight: 500;
+                
+              }
+              textarea {
+                background-color: $background_navbar;
+                display: block;
+                width: 100%;
+                border: none;
+                border-bottom: 2px solid $background_navbar;
+                color: $background_navbar;
+                outline: none;
+                padding: 1rem 0;
+                resize: none;
+              }
+              h2 {
+                @include disenio_h2
+              }
+              a {
+                font-size: 1.3rem;
+              }
+          }
+      }
+  }
+  

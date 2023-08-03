@@ -1,100 +1,10 @@
-.index_title h1 {
-  font-family: "Abril Fatface", cursive;
-  font-size: 3rem;
-  color: rgb(185, 106, 201);
-}
-.index_title .pindex {
-  font-family: "Rowdies", cursive;
-  display: grid;
-  justify-content: center;
-}
-
-.btn-primary {
-  background-color: rgb(255, 175, 204);
-  color: black;
-  border-color: rgb(255, 175, 204);
-}
-.btn-primary:hover {
-  background-color: rgb(185, 106, 201);
-  border-color: rgb(185, 106, 201);
-}
-
-.card-body h5 {
-  font-family: "Rowdies", cursive;
-}
-.card-body p {
-  font-family: "Rowdies", cursive;
-}
-
-.p-2 {
-  background-color: rgb(255, 200, 221);
-}
-
-body {
-  background-color: rgb(255, 230, 252);
-}
-body .container-fluid {
-  background-color: rgb(255, 200, 221);
-  border-radius: 10px;
-}
-
-.card {
-  border-radius: 30px;
-}
-
-.sobremi h1 {
-  font-family: "Abril Fatface", cursive;
-  font-size: 3rem;
-  color: rgb(185, 106, 201);
-}
-.sobremi p {
-  font-family: "Rowdies", cursive;
-  display: grid;
-  justify-content: center;
-}
-
-.Contacto {
-  color: rgb(185, 106, 201);
-  font-family: "Abril Fatface", cursive;
-  font-size: 3rem;
-}
-
-.card__one {
-  transition: transform 0.2s;
-  border-radius: 30px;
-  background-color: white;
-}
-.card__one::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
-  content: "";
-  opacity: 0;
-  z-index: -1;
-}
-.card__one:hover, .card__one:focus {
-  transform: scale3d(1.056, 1.056, 1);
-}
-.card__one:hover::after, .card__one:focus::after {
-  opacity: 2;
-}
-
-.menu .tittle_menu {
-  font-family: "Abril Fatface", cursive;
-  font-size: 3rem;
-  color: rgb(185, 106, 201);
-}
-.menu .text_menu {
-  font-family: "Rowdies", cursive;
-  font-size: 18px;
-  display: grid;
-  justify-content: center;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 .footer-wrapper .footer-icon,
 .footer-wrapper .footer-icon:visited {
   display: inline-block;
@@ -203,6 +113,384 @@ body .container-fluid {
   color: #fff;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+.navbar {
+  padding: 2rem;
+  background-color: rgb(255, 175, 204);
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+/* Font */
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main .h1_paq {
+  font-family: "Caprasimo", cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(185, 106, 201);
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+.main .cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main .cards .cards_item {
+  display: flex;
+  padding: 1rem;
+}
+.main .cards .cards_item .card {
+  background-color: 204;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+.main .cards .cards_item .card .card_image {
+  transition: ease-in-out 600ms;
+  max-width: 100%;
+  height: 400px;
+}
+.main .cards .cards_item .card .card_image:hover {
+  transform: translatey(0px) translatex(0px) scale(1.09);
+}
+.main .cards .cards_item .card .card_content {
+  padding: 1rem;
+  background: rgb(255, 200, 221);
+}
+.main .cards .cards_item .card .card_content .card_title {
+  color: rgb(35, 27, 27);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+.main .cards .cards_item .card .card_content .card_text {
+  font-family: "Rowdies", cursive;
+  font-size: 0.8rem;
+  color: rgb(35, 27, 27);
+}
+.main .cards .cards_item img {
+  height: 400px;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  transition: ease-in-out 600ms;
+}
+.main .cards .cards_item .btn {
+  color: rgb(35, 27, 27);
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgb(255, 175, 204);
+}
+.main .cards .cards_item .btn:hover {
+  transform: translatey(0px) translatex(0px) scale(1.09);
+}
+.main .cards .cards_item .btn:hover {
+  background-color: rgb(185, 106, 201);
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+.hidding {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+.hidding h1 {
+  animation: fadeInDown;
+  animation-duration: 2s;
+  font-family: "Caprasimo", cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(185, 106, 201);
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+.hidding h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  background-color: rgb(255, 200, 221);
+}
+.hidding p {
+  animation: flipInX;
+  animation-duration: 2s;
+  font-family: "Rowdies", cursive;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 35px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.container .about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .about .about_img {
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+.container .about .about_img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  animation: bounceInLeft;
+  animation-duration: 2s;
+  transition: 0.5s ease;
+}
+.container .about .about_img img:hover {
+  transform: scale(1.2);
+}
+.container .about .about_content {
+  flex: 1;
+}
+.container .about .about_content h2 {
+  font-family: "Caprasimo", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(185, 106, 201);
+}
+.container .about .about_content p {
+  font-family: "Rowdies", cursive;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 35px;
+}
+.container .about .about_content .read_more {
+  animation: fadeInRight;
+  animation-duration: 2s;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(185, 106, 201);
+  color: rgb(35, 27, 27);
+  font-size: 19px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}
+.container .about .about_content .read_more:hover {
+  background-color: rgb(255, 200, 221);
+}
+
+@media screen and (max-width: 768px) {
+  .hidding {
+    padding: 0px 20px;
+  }
+  .hidding h1 {
+    font-size: 36px;
+  }
+  .hidding p {
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+  .container {
+    padding: 0px;
+  }
+  .container .about {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .container .about .about_img {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .container .about .about_content p {
+    padding: 0px;
+    font-size: 16px;
+  }
+  .container .about .about_content .read_more {
+    font-size: 16px;
+  }
+}
+.contenedor {
+  background-color: rgb(255, 200, 221);
+}
+.contenedor .tittle_menu {
+  font-family: "Caprasimo", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(185, 106, 201);
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+.contenedor img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  animation: bounceInRight;
+  animation-duration: 2s;
+  transition: 0.5s ease;
+}
+.contenedor img:hover {
+  transform: scale(1.1);
+}
+.contenedor p {
+  font-family: "Rowdies", cursive;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 35px;
+}
+.contenedor .btn-primary {
+  color: rgb(35, 27, 27);
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgb(255, 175, 204);
+}
+.contenedor .btn-primary:hover {
+  transform: translatey(0px) translatex(0px) scale(1.09);
+}
+.contenedor .btn-primary:hover {
+  background-color: rgb(185, 106, 201);
+}
+
+#contact {
+  padding: 5rem 0;
+}
+#contact .contact-container {
+  display: flex;
+  background: rgb(255, 200, 221);
+}
+#contact .contact-container .contact-img {
+  width: 50%;
+}
+#contact .contact-container .contact-img img {
+  display: block;
+  height: 400px;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+#contact .contact-container .form-container {
+  padding: 1rem;
+  width: 50%;
+  margin: auto;
+}
+#contact .contact-container .form-container input {
+  background-color: rgb(255, 175, 204);
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgb(255, 175, 204);
+  padding: 1rem 0;
+  box-shadow: none;
+  outline: none;
+  margin-bottom: 1rem;
+  color: rgb(185, 106, 201);
+  font-weight: 500;
+}
+#contact .contact-container .form-container textarea {
+  background-color: rgb(255, 175, 204);
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgb(255, 175, 204);
+  color: rgb(255, 175, 204);
+  outline: none;
+  padding: 1rem 0;
+  resize: none;
+}
+#contact .contact-container .form-container h2 {
+  font-family: "Caprasimo", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(185, 106, 201);
+}
+#contact .contact-container .form-container a {
+  font-size: 1.3rem;
+}
+
+body {
+  background-image: url(../images/marco-ingredientes-alimentarios-hornear-sobre-fondo-pastel-ligeramente-rosa-cocinar-plano-espacio-copia-vista-superior-concepto-horneado-endecha-plana.jpg);
+  background-repeat: round;
+}
+body h1 {
+  font-family: "Caprasimo", cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(185, 106, 201);
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+body p {
+  font-family: "Rowdies", cursive;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 35px;
+}
+body .contenedor {
+  background-color: rgb(255, 200, 221);
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

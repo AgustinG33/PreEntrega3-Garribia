@@ -1,0 +1,121 @@
+.hidding{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    h1{
+        animation: fadeInDown;
+        animation-duration: 2s;
+        @include disenio_h1;
+        &::after{
+                content:"";
+                position: absolute;
+                width: 100%;
+                margin: auto;
+                background-color: $background;
+            }
+        } 
+        p{
+            animation: flipInX;
+            animation-duration: 2s;
+            @include p;
+        }
+        
+    }
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .about_img{
+            flex: 1;
+            margin-right: 40px;
+            overflow: hidden;
+            img{
+                max-width: 100%;
+                height: auto;
+                display: block;
+                animation: bounceInLeft; 
+                animation-duration: 2s;
+                transition: 0.5s ease;
+                &:hover{
+                    transform: scale(1.2);
+                }
+
+            }
+
+        }
+        .about_content{
+            flex: 1;
+            h2{
+                @include disenio_h2
+            }
+            p{
+                @include p;
+
+            }
+            .read_more{
+                animation: fadeInRight;
+                animation-duration: 2s;
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: $color_tittle;
+                color: $text;
+                font-size: 19px;
+                text-decoration: none;
+                border-radius: 25px;
+                margin-top: 15px;
+                transition: 0.3s ease;
+                &:hover {
+                    background-color: $background;
+                    
+                }
+
+
+            }
+        }
+    }
+}
+
+@media  screen and (max-width: 768px){
+    .hidding{
+        padding: 0px 20px;
+        h1{
+            font-size: 36px;
+
+        }
+        p{
+            font-size: 17px;
+            margin-bottom: 0px;
+        }
+    }
+    .container{
+        padding: 0px;
+        .about{
+            padding: 20px;
+            flex-direction: column;
+            .about_img{
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+            .about_content{
+                p{
+                    padding: 0px;
+                    font-size:  16px;
+                }
+                .read_more{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
