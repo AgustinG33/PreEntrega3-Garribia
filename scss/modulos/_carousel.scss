@@ -1,0 +1,43 @@
+
+.contendor_Carosel{
+    display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    .slide{
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 2000px;
+        .carousel-item{
+            align-items: center;
+            img{
+                height: 800px;
+            }
+           
+    
+        }
+    }
+
+}
+
+@media  screen and (max-width: 768px){
+    .contendor_Carosel{
+        .slide{
+            margin: 0%;
+        }
+    }
+}
+
+@media  screen and (max-width: 425px){
+    .contendor_Carosel{
+        .slide{
+            margin: 0%;
+            .carousel-item{
+                align-items: center;
+                img{
+                    height: 400px;
+                }
+            }
+
+        }
+    }
+}

@@ -67,7 +67,10 @@
                     transition: ease-in-out 600ms;
                   }
                   .btn {
-                    @include btn
+                    @include btn;
+                    .link{
+                      color: $text;
+                    }
                     
                     }
                 }

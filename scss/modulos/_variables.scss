@@ -7,10 +7,11 @@ $disenio_h1:  'Roboto', sans-serif;
 $disenio_p: 'Rowdies', cursive,;
 $nav: rgb(255, 200, 221);
 $shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
-$background_navbar: rgb(255,175,204);
+$background_navbar: rgb(255,210,252);
 $background: rgb(255,200,221);
 $text: rgb(35,27,27);
 $prueba: rgb(236, 2, 2);
+$color_btn_cards: rgba(185, 106, 201, 0.596);
 
 @mixin disenio_h1 {
             font-family: 'Caprasimo', cursive;
@@ -18,8 +19,12 @@ $prueba: rgb(236, 2, 2);
             font-weight: 400;
             text-align: center;
             color: rgb(185, 106, 201);
+            text-shadow: 1px 1px 2px #000000a4;
             animation: fadeInDown;
             animation-duration: 2s;
+            @media  screen and (max-width: 768px){
+                font-size: 2rem;
+            }
 }
 @mixin disenio_h2 {
     font-family: 'Caprasimo', cursive;
@@ -27,10 +32,11 @@ $prueba: rgb(236, 2, 2);
     font-weight: 400;
     text-align: center;
     color: rgb(185, 106, 201);
+    text-shadow: 1px 1px 2px #000000a4;
 }
 
 @mixin disenio_p_cards {
-    font-family: 'Rowdies', cursive,;
+    font-family: 'Rowdies', cursive;
     font-size: .8rem;
     color: $text;
 
@@ -55,10 +61,10 @@ $prueba: rgb(236, 2, 2);
 }
 
 @mixin btn {
-    @include agrandar;
+    font-family: 'Rowdies', cursive,;
     color: $text;
-    padding: 0.8rem;
-    font-size: 14px;
+    padding: 0.5rem;
+    font-size: 16px;
     text-transform: uppercase;
     border-radius: 4px;
     font-weight: 400;
@@ -68,7 +74,8 @@ $prueba: rgb(236, 2, 2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: $background_navbar;
     &:hover {
-        background-color: $color_tittle;
+        background-color: $color_btn_cards;
+        
     }
                     }
 @mixin img_animation{
@@ -82,3 +89,4 @@ $prueba: rgb(236, 2, 2);
                     transform: scale(1.1);
                 }
 }
+

@@ -7,7 +7,7 @@
             width: 50%;
             img {
                 display: block;
-                height: 400px;
+                height: 100%;
                 width: 100%;
                 object-position: center;
                 object-fit: cover;
@@ -18,7 +18,7 @@
             width: 50%;
             margin: auto;
             input {
-                background-color: $background_navbar;
+                background-color: white;
                 display: block;
                 width: 100%;
                 border: none;
@@ -27,24 +27,27 @@
                 box-shadow: none;
                 outline: none;
                 margin-bottom: 1rem;
-                color: $color_tittle;
+                color: $text;
                 font-weight: 500;
                 
               }
               .btn {
                 @include btn;
+                margin: 1rem;
                 
                 }
               textarea {
-                background-color: $background_navbar;
+                background-color: white;
                 display: block;
                 width: 100%;
                 border: none;
                 border-bottom: 2px solid $background_navbar;
-                color: $background_navbar;
-                outline: none;
                 padding: 1rem 0;
-                resize: none;
+                box-shadow: none;
+                outline: none;
+                margin-bottom: 1rem;
+                color: $text;
+                font-weight: 500;
               }
               h2 {
                 @include disenio_h2
@@ -56,5 +59,30 @@
         }
           }
       }
-  
-  
+
+
+
+
+@media  screen and (max-width: 768px){
+    #contact{
+      .contact-container{
+        padding: 20px;
+        flex-direction: column;
+        .contact-img{
+          width: 100%;
+          img{
+            width: 100%;
+            height: 300px;
+          }
+        }
+        .form-container{
+          width: 100%;
+          input {
+            width: 100%;
+            
+          }
+        }
+      }
+      
+    }
+}

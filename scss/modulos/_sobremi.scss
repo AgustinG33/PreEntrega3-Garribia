@@ -62,6 +62,7 @@
 
             }
             .read_more{
+                font-family: 'Rowdies', cursive,;
                 animation: fadeInRight;
                 animation-duration: 2s;
                 display: inline-block;
@@ -111,7 +112,10 @@
                     font-size:  16px;
                 }
                 .read_more{
-                    font-size: 16px;
+                    font-family: 'Rowdies', cursive,;
+                    font-size: 18px;
+                    color: rgb(0, 0, 0);
+                    margin-bottom: 35px;
                 }
             }
         }
