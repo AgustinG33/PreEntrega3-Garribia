@@ -99,6 +99,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: rgb(35, 27, 27);
 }
 .navbar-collapse .ul_list {
   padding-right: 0%;
@@ -106,13 +107,16 @@
   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 320px) {
   .navbar-brand {
     display: none;
   }
 }
 .nav_header {
   background-color: rgb(255, 200, 221);
+}
+.nav_header .container-fluid .navbar-toggler {
+  color: black;
 }
 .nav_header .container-fluid .img_logo {
   object-fit: cover;
@@ -143,8 +147,6 @@
   border-radius: 40%;
 }
 
-/* Font */
-/* Design */
 *,
 *::before,
 *::after {
@@ -837,6 +839,92 @@
     margin-bottom: 35px;
   }
 }
+.contedor_main_tortas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(255, 210, 252);
+  align-items: center;
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+.food-menu-container .food-menu-item {
+  display: flex;
+  flex: 1 1 600px;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+.food-menu-container .food-menu-item img {
+  display: block;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.food-menu-container .food-menu-item img:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease;
+}
+.food-menu-container .food-menu-item .food-description {
+  margin: auto 1.5rem;
+}
+.food-menu-container .food-menu-item .food-description h2 {
+  font-family: "Caprasimo", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(185, 106, 201);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6431372549);
+}
+.food-menu-container .food-menu-item .food-description p {
+  font-family: "Rowdies", cursive;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 35px;
+}
+.food-menu-container .food-menu-item .food-description .read_more {
+  font-family: "Rowdies", cursive;
+  animation: fadeInRight;
+  animation-duration: 2s;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(185, 106, 201);
+  color: rgb(35, 27, 27);
+  font-size: 19px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  transition: 0.3s ease;
+  padding-top: 15px;
+}
+.food-menu-container .food-menu-item .food-description .read_more:hover {
+  background-color: rgb(255, 200, 221);
+}
+
+@media screen and (max-width: 650px) {
+  .food-menu-container {
+    padding: 0px;
+    width: 100%;
+  }
+  .food-menu-container .food-menu-item {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .food-menu-container .food-menu-item img {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
 body {
   background-image: url(../images/Fondo_body.webp);
   background-repeat: round;
@@ -872,7 +960,7 @@ body .contenedor {
     height: auto;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   body {
     background-image: none;
     background-color: rgb(255, 240, 246);

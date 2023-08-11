@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: $text;
     .ul_list{
         padding-right: 0%;
         justify-content: center;
@@ -14,15 +15,18 @@
     }
 }
 
-@media screen and (max-width: 767px) {
-    .navbar-brand {
-        display: none;
-    }
-}
+@media screen and (max-width: 320px) {
+     .navbar-brand {
+         display: none;
+     }
+ }
 
 .nav_header{
     background-color: $background;
     .container-fluid{
+        .navbar-toggler{
+            color: black;
+        }
         .img_logo{
             object-fit: cover;
             width: 30%;
@@ -37,9 +41,7 @@
                 border-radius: 40%;
                 
                 &:hover {
-                    //   background-color: $color_tittle;
                       transition: 500ms linear;
-                    //   border: 1px solid; 
                       box-shadow: inset 0 0 20px rgba(255, 210, 252, 0.5), 0 0 20px rgba(185, 106, 201, 0.582);
                       outline-color: rgba(255, 255, 255, 0); 
                       outline-offset: 15px;
